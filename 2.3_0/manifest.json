@@ -1,0 +1,57 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "build-extension/tabBar.png",
+         "16": "build-extension/tabBar.png",
+         "32": "build-extension/tabBar.png",
+         "48": "build-extension/tabBar.png"
+      },
+      "default_popup": "build-extension/popup.html",
+      "default_title": "Tran Hiep Mochi Dictionary"
+   },
+   "background": {
+      "service_worker": "/build-extension/js/background.js",
+      "type": "module"
+   },
+   "chrome_url_overrides": {
+      "newtab": "build-new-tab/index.html"
+   },
+   "content_scripts": [ {
+      "css": [ "build-extension/css/content.css" ],
+      "js": [ "build-extension/js/content/app.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';script-src-elem 'self' "
+   },
+   "cross_origin_embedder_policy": {
+      "value": "require-corp"
+   },
+   "cross_origin_opener_policy": {
+      "value": "same-origin"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "externally_connectable": {
+      "matches": [ "https://mochidemy.com/extension-page-login/*" ]
+   },
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "images/icon-128x.png",
+      "16": "images/icon-16x.png",
+      "32": "images/icon-32x.png",
+      "48": "images/icon-48x.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAklZKXlwEvGEuaV1WomONxDxnfyAzcsRDTTsF6K36ESpjEyNgjjCOFiwVi2clrxbZLVmws2ppkGU3+IzkGi8CKWGzl1GNPu7pDNBv75635GiCFcE3PrMfLjqggFfpNsoaRRCLiNcFPYyDn8rDVKPOWgDys1L5o7OqWBHH759dsHA38gfDemd9CeOf1ZoIPKQELWhCfXn/SwxQ3JJDfRgYsTT5hrrhpIIQRmKk3Wmg54fuxJrPNjXZbE6SbHAKPzJ+qLvfL+VhOMWODLl4FfoZrWjsYdSp9gvBy8HEZ74VwYzyinAFu96hZO0sYTm2h+63sK9gZ+OsNlcCPJuPkothYwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "permissions": [ "tabs", "storage", "cookies", "webRequest", "history" ],
+   "short_name": "Mochi_Dict",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "images/*" ]
+   } ]
+}

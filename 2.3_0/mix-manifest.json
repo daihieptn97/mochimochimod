@@ -1,0 +1,8 @@
+{
+    "/build-extension/js/popup/app.js": "/build-extension/js/popup/app.js",
+    "/build-extension/js/content/app.js": "/build-extension/js/content/app.js",
+    "/build-extension/js/background.js": "/build-extension/js/background.js",
+    "/build-extension/popup.html": "/build-extension/popup.html",
+    "/build-extension/tabBar.png": "/build-extension/tabBar.png",
+    "/build-extension/css/content.css": "/build-extension/css/content.css"
+}

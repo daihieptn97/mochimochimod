@@ -1,0 +1,19 @@
+/* .information-wrapper.right-wrapper.blur-background {
+    display: none;
+} */
+
+.ext__video--suggest {
+    display: none;
+}
+
+h4.total-word {
+    display: none;
+}
+
+text {
+    display: none;
+}
+
+.mochi__history {
+    display: none !important;
+}
