@@ -17,3 +17,19 @@ text {
 .mochi__history {
     display: none !important;
 }
+
+.second-row-left.col-lg-6.col-md-8 {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+
+.list__video--mochi {
+    display: none !important;
+}
+
+.second-row-left.col-lg-6.col-md-8 > .row:first-child {
+    flex: 1
+}
